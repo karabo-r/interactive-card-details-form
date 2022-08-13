@@ -1,0 +1,48 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 18rem auto ;
+    }
+
+    body .background-1{
+        background-image: url('./images/bg-main-mobile.png');
+        background-size: cover;
+    }
+    
+    main{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-rows: 20rem auto;
+    }
+    
+    main .card{
+        position: absolute;
+        height: 11rem;
+        width: 80%;
+        border-radius: 8px;
+    }
+    
+    main .card-front{
+        background-image: url('./images/bg-card-front.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(5%, 10rem);
+    }
+    
+    main .card-back{
+        background-image: url('./images/bg-card-back.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(20%, 3rem);
+        
+    }
+}
